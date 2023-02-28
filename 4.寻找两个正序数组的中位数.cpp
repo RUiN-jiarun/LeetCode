@@ -13,11 +13,11 @@ public:
 			nums1 = nums2;
 			nums2 = num;
 		}
-        // Make sure that nums1 smaller than nums2
+		// Make sure that nums1 smaller than nums2
 		int m = nums1.size();
 		int n = nums2.size();
 
-        int totalleft = (m + n + 1) / 2;        // the left part of the merged list
+		int totalleft = (m + n + 1) / 2;        // the left part of the merged list
 		int left = 0;                           // pointer to the beginning of nums1
 		int right = m;                          // pointer to the end of nums1
 		while (left < right) {                  
