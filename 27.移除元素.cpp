@@ -9,6 +9,7 @@ class Solution {
 public:
     int removeElement(vector<int>& nums, int val) {
         if (nums.size() == 0)   return 0;
+        // 双指针（快慢指针法）
         int i = 0, j = 0;
         for (j = 0; j < nums.size(); j++) {
             if (nums[j] != val) {
