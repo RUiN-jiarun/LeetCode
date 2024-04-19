@@ -15,10 +15,12 @@ public:
         vector<int> res;
         stack<TreeNode*> s;
         while (root != nullptr || !s.empty()) {
+            // 要一路向左直到底层，先把左遍历完
             while (root != nullptr) {
                 s.push(root);
                 root = root->left;
             }
+            // 栈顶就是要处理的数据
             root = s.top();
             s.pop();
             res.push_back(root->val);
